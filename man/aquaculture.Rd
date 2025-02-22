@@ -18,7 +18,7 @@ Data frame containing eight columns:
 }
 }
 \source{
-FAO (2023).
+FAO (2022).
 Global Aquaculture Production.
 Fisheries and Aquaculture Division. Rome.
 
@@ -29,7 +29,7 @@ aquaculture
 }
 \description{
 Aquaculture production quantity by species, area, country, and aquatic
-environment for the years 1950-2021, compiled and published by FAO (2023).
+environment for the years 1950-2020, compiled and published by FAO (2022).
 }
 \details{
 This data frame contains the full set of 99,957 data records from the
@@ -42,8 +42,8 @@ head(aquaculture)
 # Add species columns
 aqua <- merge(aquaculture, species)
 
-# Top 10 aquaculture species in 2021, production in tonnes
-x <- aggregate(value~species_name, aqua, sum, subset=year==2021)
+# Top 10 aquaculture species in 2020, production in tonnes
+x <- aggregate(value~species_name, aqua, sum, subset=year==2020)
 x$value <- round(x$value)
 head(x[order(-x$value),], 10)
 
@@ -63,5 +63,5 @@ available in a combined \code{\link{production}} format.
 \code{\link{measure}}, \code{\link{source}}, \code{\link{species}}, and
 \code{\link{status}} are lookup tables.
 
-\code{\link{fishstat23-package}} gives an overview of the package.
+\code{\link{fishstat22-package}} gives an overview of the package.
 }

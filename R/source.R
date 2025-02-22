@@ -5,7 +5,7 @@
 #' @title Sources
 #'
 #' @description
-#' Sources of aquaculture and capture production, defined by FAO (2023).
+#' Sources of aquaculture and capture production, defined by FAO (2022).
 #'
 #' @usage
 #' source
@@ -23,7 +23,7 @@
 #' to facilitate quick exploration and plotting in R.
 #'
 #' @source
-#' FAO (2023).
+#' FAO (2022).
 #' Global Production.
 #' Fisheries and Aquaculture Division. Rome.
 #'
@@ -37,7 +37,7 @@
 #' \code{\link{measure}}, \code{\link{source}}, \code{\link{species}}, and
 #' \code{\link{status}} are lookup tables.
 #'
-#' \code{\link{fishstat23-package}} gives an overview of the package.
+#' \code{\link{fishstat22-package}} gives an overview of the package.
 #'
 #' @examples
 #' source
@@ -46,8 +46,8 @@
 #' prod <- production[production$measure == "Q_tlw" & production$value > 0,]
 #' prod <- merge(prod, source)
 #'
-#' # Production by source in 2021, in million tonnes
-#' x <- aggregate(value~source_name, prod, sum, subset=year==2021)
+#' # Production by source in 2020, in million tonnes
+#' x <- aggregate(value~source_name, prod, sum, subset=year==2020)
 #' transform(x, value=round(value/1e6))
 
 NA

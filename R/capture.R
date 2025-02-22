@@ -6,7 +6,7 @@
 #'
 #' @description
 #' Capture production quantity by species, area, and country for the years
-#' 1950-2021, compiled and published by FAO (2023).
+#' 1950-2020, compiled and published by FAO (2022).
 #'
 #' @usage
 #' capture
@@ -29,7 +29,7 @@
 #' simplified to facilitate quick exploration and plotting in R.
 #'
 #' @source
-#' FAO (2023).
+#' FAO (2022).
 #' Global Capture Production.
 #' Fisheries and Aquaculture Division. Rome.
 #'
@@ -43,7 +43,7 @@
 #' \code{\link{measure}}, \code{\link{source}}, \code{\link{species}}, and
 #' \code{\link{status}} are lookup tables.
 #'
-#' \code{\link{fishstat23-package}} gives an overview of the package.
+#' \code{\link{fishstat22-package}} gives an overview of the package.
 #'
 #' @examples
 #' head(capture)
@@ -52,8 +52,8 @@
 #' cap <- aggregate(value~species+year, capture, sum, subset=measure=="Q_tlw")
 #' cap <- merge(cap, species[c("species", "species_name", "major")])
 #'
-#' # Top 10 capture species in 2021
-#' x <- aggregate(value~species_name, cap, sum, subset=year==2021)
+#' # Top 10 capture species in 2020
+#' x <- aggregate(value~species_name, cap, sum, subset=year==2020)
 #' x$value <- round(x$value)
 #' head(x[order(-x$value),], 10)
 #'

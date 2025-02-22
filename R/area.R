@@ -4,7 +4,7 @@
 #'
 #' @title Areas
 #'
-#' @description Major inland and marine fishing areas, defined by FAO (2023).
+#' @description Major inland and marine fishing areas, defined by FAO (2022).
 #'
 #' @usage
 #' area
@@ -27,7 +27,7 @@
 #' facilitate quick exploration and plotting in R.
 #'
 #' @source
-#' FAO (2023).
+#' FAO (2022).
 #' Global Production.
 #' Fisheries and Aquaculture Division. Rome.
 #'
@@ -41,7 +41,7 @@
 #' \code{\link{measure}}, \code{\link{source}}, \code{\link{species}}, and
 #' \code{\link{status}} are lookup tables.
 #'
-#' \code{\link{fishstat23-package}} gives an overview of the package.
+#' \code{\link{fishstat22-package}} gives an overview of the package.
 #'
 #' @examples
 #' head(area)

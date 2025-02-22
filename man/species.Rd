@@ -20,7 +20,7 @@ Data frame containing ten columns:
 }
 }
 \source{
-FAO (2023).
+FAO (2022).
 Global Production.
 Fisheries and Aquaculture Division. Rome.
 
@@ -30,7 +30,7 @@ Fisheries and Aquaculture Division. Rome.
 species
 }
 \description{
-Aquatic species and taxonomic groups, defined by FAO (2023).
+Aquatic species and taxonomic groups, defined by FAO (2022).
 }
 \details{
 This data frame contains the full set of 13,417 data records from the
@@ -85,5 +85,5 @@ available in a combined \code{\link{production}} format.
 \code{\link{measure}}, \code{\link{source}}, \code{\link{species}}, and
 \code{\link{status}} are lookup tables.
 
-\code{\link{fishstat23-package}} gives an overview of the package.
+\code{\link{fishstat22-package}} gives an overview of the package.
 }
